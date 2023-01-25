@@ -280,7 +280,7 @@ function AddToTask({ handleClose, open }: Props) {
                                                 <StyledSelect {...field}>
                                                     {
                                                         status.map((stat) => (
-                                                            <MenuItem value={stat}>{stat}</MenuItem>
+                                                            <MenuItem key={stat} value={stat}>{stat}</MenuItem>
                                                         ))
                                                     }
                                                 </StyledSelect>
