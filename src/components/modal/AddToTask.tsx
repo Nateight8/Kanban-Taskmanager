@@ -28,15 +28,12 @@ type Props = {
 }
 
 
-interface subtask {
-    task: string
-}
 
 interface MyFormValues {
     description: string;
     title: string;
     status: string;
-    subtasks: subtask[""]
+    subtasks: string[]
 }
 
 
@@ -82,7 +79,7 @@ function AddToTask({ handleClose, open }: Props) {
 
 
     const initialValues: MyFormValues = {
-        description: '',
+        description: "",
         title: "",
         status: "",
         subtasks: [""]
